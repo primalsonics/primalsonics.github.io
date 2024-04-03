@@ -1,0 +1,87 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Your Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS styles for your page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(5px);
+        }
+
+        .main-content {
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            max-width: 100%;
+            overflow-y: auto;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .intro-video {
+            margin-top: 50px;
+        }
+
+        .company-logos {
+            margin-top: 50px;
+        }
+
+        .company-logos img {
+            width: 120px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .company-logos img {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="F:\videos\2023-11-08_02-56-32.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="main-content">
+        <h1>About Us</h1>
+        <p>Welcome to Your Company, where excellence meets innovation.</p>
+
+        <div class="intro-video">
+            <h2>Introduction Video</h2>
+            <video controls width="600">
+                <source src="path/to/your/intro-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="company-logos">
+            <h2>Our Partners</h2>
+            <div>
+                <img src="path/to/company1-logo.png" alt="Company 1 Logo">
+                <img src="path/to/company2-logo.png" alt="Company 2 Logo">
+                <!-- Add more company logos as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
